@@ -3,7 +3,7 @@ Rails.application.configure do
 
   config.lograge.enabled = true
   config.lograge.base_controller_class = 'ActionController::API'
-  
+
   # This specifies to log in JSON format
   config.lograge.formatter = Lograge::Formatters::Json.new
 
@@ -22,5 +22,4 @@ Rails.application.configure do
         :session_id => event.payload[:request].session.id
       }
   end
-
 end
