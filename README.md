@@ -4,6 +4,7 @@ Starter Spree with Lograge enabled
 #For Linux based systems
 
 Run the bin/setup file and do "docker-compose up"
+
 WARNING: Make sure you have execution rights on the setup files. If not, do a chmod command in order to grant the rights: chmod +x.
 
 Add sample data: docker-compose run --rm web bash -c "bundle exec rake spree_sample:load" before compose up
